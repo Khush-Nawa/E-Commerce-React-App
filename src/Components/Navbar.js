@@ -1,7 +1,6 @@
 // Import necessary components and modules from react-bootstrap and react-router-dom
 import React from 'react';
 import logo from './logo.png';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -13,15 +12,10 @@ import Badge from 'react-bootstrap/Badge';
 // Define a functional component named OffcanvasExample that takes 'props' as a parameter
 function OffcanvasExample(props) {
 
-  // Define state variable setter function 'setShow' using useState hook
-  const [setShow] = useState(false);
-
-  // Function to close the modal
-  const handleClose = () => setShow(false);
   return (
    
         // Render a Navbar component with 'expand' as the key and expand="md" as a prop
-        <Navbar key="md" expand="md" className="bg-body-tertiary sticky-top" bg="dark" data-bs-theme="dark">
+        <Navbar expand="md" className="bg-body-tertiary sticky-top" bg="dark" data-bs-theme="dark">
           {/* Create a fluid Container */}
           <Container fluid>
             {/* Render a Navbar.Brand component as a Link to the specified route */}
@@ -45,22 +39,22 @@ function OffcanvasExample(props) {
                   E-Commerce-React-App
                 </Offcanvas.Title>
               </Offcanvas.Header>
-                            
+
               {/* Render the body of the Offcanvas */}
               <Offcanvas.Body>
                 {/* Render a Nav component with justified content */}
                 <Nav className="justify-content-center flex-grow-1 pe-3">
                   {/* Render Nav.Links as Links to specified routes */}
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/" onClick={handleClose}>
+                  <Nav.Link as={Link} to="/E-Commerce-React-App/">
                     Home
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/Product" onClick={handleClose}>
+                  <Nav.Link as={Link} to="/E-Commerce-React-App/Product">
                     Product
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/About" onClick={handleClose}>
+                  <Nav.Link as={Link} to="/E-Commerce-React-App/About">
                     About
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/Contact" onClick={handleClose}>
+                  <Nav.Link as={Link} to="/E-Commerce-React-App/Contact">
                     Contact Us
                   </Nav.Link>
                 </Nav>
@@ -86,3 +80,4 @@ function OffcanvasExample(props) {
 
 // Export the OffcanvasExample component as the default export of this module
 export default OffcanvasExample;
+

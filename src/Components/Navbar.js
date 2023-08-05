@@ -1,83 +1,57 @@
-// Import necessary components and modules from react-bootstrap and react-router-dom
-import React from 'react';
-import logo from './logo.png';
-import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
+// Import necessary components from react-bootstrap and react-router-dom
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
+import logo from './logo.png';
+import { Link } from 'react-router-dom';
 
-// Define a functional component named OffcanvasExample that takes 'props' as a parameter
-function OffcanvasExample(props) {
-
+// Define a functional component named CollapsibleExample that takes 'props' as input
+function CollapsibleExample(props) {
   return (
-   
-        // Render a Navbar component with 'expand' as the key and expand="md" as a prop
-        <Navbar expand="md" className="bg-body-tertiary sticky-top" bg="dark" data-bs-theme="dark">
-          {/* Create a fluid Container */}
-          <Container fluid>
-            {/* Render a Navbar.Brand component as a Link to the specified route */}
-            <Navbar.Brand as={Link} to="/E-Commerce-React-App/">
-              <img src={logo} alt="logo" height={50} />
-            </Navbar.Brand>
-
-            {/* Render a toggle button for the Offcanvas */}
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-$"md"`} />
-
-            {/* Render the Offcanvas component with an id and other attributes */}
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-$"md"`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-$"md"`}
-              placement="end" bg="dark" data-bs-theme="dark"
-            >
-              {/* Render the header of the Offcanvas with a close button */}
-              <Offcanvas.Header closeButton>
-                {/* Render the title of the Offcanvas */}
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-$"md"`}>
-                  E-Commerce-React-App
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-
-              {/* Render the body of the Offcanvas */}
-              <Offcanvas.Body>
-                {/* Render a Nav component with justified content */}
-                <Nav className="justify-content-center flex-grow-1 pe-3">
-                  {/* Render Nav.Links as Links to specified routes */}
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/">
-                    Home
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/Product">
-                    Product
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/About">
-                    About
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/E-Commerce-React-App/Contact">
-                    Contact Us
-                  </Nav.Link>
-                </Nav>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-
-            {/* Render a Button as a Link to the specified route */}
-            <Button
-              as={Link}
-              to="/E-Commerce-React-App/CartList"
-              className="m-2"
-              variant="outline-light"
-            >
-              {/* Render an icon */}
-              <i className="bi bi-cart4" style={{ "font-size": "35px" }}></i>
-              {/* Render a Badge component with a dark background and the count from props */}
-              <Badge bg="dark">{props.count}</Badge>
-            </Button>
-          </Container>
-        </Navbar>     
+    // Create a responsive Navbar that collapses on smaller screens
+    <Navbar collapseOnSelect expand="md" className="bg-body-tertiary sticky-top" bg="dark" data-bs-theme="dark">
+      <Container>
+        {/* Add a brand logo to the Navbar, linking to the home page */}
+        <Navbar.Brand as={Link} to="/E-Commerce-React-App/">
+          <img src={logo} alt="logo" height={50} />
+        </Navbar.Brand>
+        {/* Create a toggle button for responsive navigation */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        {/* Create a collapsible section for navigation links */}
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
+          <Nav>
+            {/* Add navigation links using react-router-dom */}
+            <Nav.Link as={Link} to="/E-Commerce-React-App/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/E-Commerce-React-App/Product">
+              Product
+            </Nav.Link>
+            <Nav.Link as={Link} to="/E-Commerce-React-App/About">
+              About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/E-Commerce-React-App/Contact">
+              Contact Us
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        {/* Add a shopping cart button with a badge showing the count of items */}
+        <Button
+          as={Link}
+          to="/E-Commerce-React-App/CartList"
+          className="m-2"
+          variant="outline-light"
+        >
+          <i className="bi bi-cart4" style={{ "font-size": "35px" }}></i>
+          {/* Display the cart item count received from the 'props' */}
+          <Badge bg="dark">{props.count}</Badge>
+        </Button>
+      </Container>
+    </Navbar>
   );
 }
 
-// Export the OffcanvasExample component as the default export of this module
-export default OffcanvasExample;
-
+// Export the CollapsibleExample component as the default export
+export default CollapsibleExample;

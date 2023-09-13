@@ -3,6 +3,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 // Define the functional component 'DarkVariantExample'
 function DarkVariantExample() {
@@ -67,7 +68,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Foot Ball Card */}
@@ -78,7 +79,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Basket Ball Card */}
@@ -89,7 +90,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Base Ball Card */}
@@ -100,7 +101,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
         </div>
@@ -116,7 +117,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Smart Watches and More Card */}
@@ -127,7 +128,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Home Appliances Card */}
@@ -138,7 +139,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Office Appliances Card */}
@@ -149,7 +150,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
         </div>
@@ -165,7 +166,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Women Ethnic Wear Card */}
@@ -176,7 +177,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Women Casual Wear Card */}
@@ -187,7 +188,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
           {/* Kids Wear Card */}
@@ -198,7 +199,7 @@ function DarkVariantExample() {
               <Card.Text>
                 Limited period Offer
               </Card.Text>
-              <Button variant="dark">Hurry Grab Now</Button>
+              <Button as={Link} variant="dark" to="/E-Commerce-React-App/Product">Hurry Grab Now</Button>
             </Card.Body>
           </Card>
         </div>

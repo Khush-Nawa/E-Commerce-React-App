@@ -21,9 +21,8 @@ function About() {
       <Figure>
         <Figure.Image
           width={2171}
-          height={500}
           alt="171x180"
-          src="https://www.collatree.com/wp-content/uploads/2021/09/What-is-E-commerce-How-is-it-important-in-your-business.png"
+          src="https://ecomnews.in/wp-content/uploads/2022/11/What-is-eCommerce-and-its-types.jpg"
         />
         <Figure.Caption>
           {/* Some placeholder text */}

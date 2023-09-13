@@ -26,7 +26,7 @@ function CollapsibleExample(props) {
             <Nav.Link as={Link} to="/E-Commerce-React-App/">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/E-Commerce-React-App/Product">
+            <Nav.Link as={Link} className='active' to="/E-Commerce-React-App/Product">
               Product
             </Nav.Link>
             <Nav.Link as={Link} to="/E-Commerce-React-App/About">

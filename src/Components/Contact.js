@@ -13,7 +13,7 @@ function Contact() {
     <>
       {/* Card component with an image overlay */}
       <Card className="bg-dark text-white">
-        <Card.Img src="https://www.helixwebi.net/images/ecommerce-website-development.jpg" height={500} alt="Card image" />
+        <Card.Img src="https://www.dialer360.com/wp-content/uploads/2019/03/How-E-Commerce-Contact-Center-Providing-the-Best-Service-1.jpg" height={500} alt="Card image" />
         <Card.ImgOverlay>
           {/* Card title and text */}
           <Card.Title className='text-dark'>E-Com API Web-App</Card.Title>
